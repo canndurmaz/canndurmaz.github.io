@@ -1,30 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Can Durmaz</title>
+  <meta name="description" content="Engineering work by Can Durmaz: gimbal servo software, neural-network torque feedforward control, satellite ground station software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Projects</a>
-    </nav>
 
-    <div class="container mt-5">
-        <h1>My Projects</h1>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li>Project 1: Description of Project 1</li>
-            <li>Project 2: Description of Project 2</li>
-            <li>Project 3: Description of Project 3</li>
-        </ul>
+<nav>
+  <a class="brand" href="index.html"><span class="dot"></span> C.DURMAZ // SYS.ONLINE</a>
+  <div class="links">
+    <a href="index.html"><span class="idx">00</span> Home</a>
+    <a href="projects.html" aria-current="page"><span class="idx">01</span> Projects</a>
+    <a href="contact.html"><span class="idx">02</span> Contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section>
+    <p class="sec-label">01 / Project Log</p>
+    <h2 class="reveal">Things I've <em>built</em>,<br>tuned, and shipped.</h2>
+
+    <div class="proj-list">
+
+      <article class="proj reveal">
+        <div class="proj-side">
+          <span class="id">P.01</span>
+          <span class="yr">2024 — PRESENT</span>
+          <span class="tag">Professional</span>
+        </div>
+        <div class="proj-body">
+          <h3>Gimbal Servo Control Software</h3>
+          <p>
+            Servo control software for stabilized gimbal systems at ASELSAN. Closed-loop
+            control running against real hardware, where settling time, overshoot, and
+            disturbance rejection are measured in fractions of a degree.
+          </p>
+          <ul>
+            <li>Develop and maintain servo control loops for multi-axis gimbal platforms</li>
+            <li>Manage the software development infrastructure for a team of 7 engineers</li>
+            <li>Mentored 2 interns through their engineering studies</li>
+          </ul>
+          <p class="stack">C · PYTHON · MATLAB/SIMULINK · CONTROL THEORY</p>
+        </div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-side">
+          <span class="id">P.02</span>
+          <span class="yr">2025</span>
+          <span class="tag">Research</span>
+        </div>
+        <div class="proj-body">
+          <h3>Neural-Network Torque Feedforward Controller</h3>
+          <p>
+            Co-authored research on a deep neural network–assisted torque feedforward
+            controller for a precision weapon system — using learned dynamics to compensate
+            torque disturbances before the feedback loop has to. Published at TOK 2025,
+            the 26th National Conference on Automatic Control.
+          </p>
+          <ul>
+            <li>S. Urkan, C. Durmaz, U. Akova — TOK 2025, pp. 445–449</li>
+            <li><a href="https://doi.org/10.5281/zenodo.17737744" target="_blank" rel="noopener" style="color:var(--amber)">DOI: 10.5281/zenodo.17737744</a></li>
+          </ul>
+          <p class="stack">DEEP LEARNING · FEEDFORWARD CONTROL · SYSTEM IDENTIFICATION</p>
+        </div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-side">
+          <span class="id">P.03</span>
+          <span class="yr">2021</span>
+          <span class="tag">Competition</span>
+        </div>
+        <div class="proj-body">
+          <h3>Teknofest Model Satellite — Ground Station</h3>
+          <p>
+            Ground station software and live telemetry interface for a model satellite in
+            the Teknofest competition: real-time downlink parsing, visualization, and
+            command uplink for the descent phase.
+          </p>
+          <ul>
+            <li>Developed the ground station software and telemetry interface</li>
+            <li>Coordinated a team of 3 in software development</li>
+          </ul>
+          <p class="stack">PYTHON · TELEMETRY · SERIAL COMMS · GUI</p>
+        </div>
+      </article>
+
     </div>
+  </section>
 
-    <!-- Link to Bootstrap JS and jQuery (for Bootstrap components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 CAN DURMAZ</span>
+    <span class="coords">39.9334° N, 32.8597° E — ANKARA</span>
+    <span>BUILT BY HAND · NO FRAMEWORKS</span>
+  </div>
+</footer>
+
 </body>
 </html>
